@@ -1,0 +1,23 @@
+fullname: personal-website
+replicaCount: 1
+image:
+  repository: harbor.schwartzdaniel.de/private/personal-website
+  tag: latest
+  pullPolicy: Always
+
+imagePullSecrets:
+  - name: harbor-pull-secret
+
+service:
+  type: ClusterIP
+  port: 80
+
+probes:
+  liveness:
+    path: /
+    initialDelaySeconds: 5
+    periodSeconds: 10
+  readiness:
+    path: /
+    initialDelaySeconds: 5
+    periodSeconds: 10
