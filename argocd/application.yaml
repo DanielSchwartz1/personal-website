@@ -4,14 +4,14 @@ metadata:
   name: personal-website
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website
-    argocd-image-updater.argoproj.io/website.allow-tags: |
-      regexp:^[0-9a-f]{40}$
-    argocd-image-updater.argoproj.io/website.helm.image-name: image.repository
-    argocd-image-updater.argoproj.io/website.helm.image-tag: image.tag
+    argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website:latest
+    argocd-image-updater.argoproj.io/personal-website.allow-tags: |
+      regexp:.*
+    argocd-image-updater.argoproj.io/personal-website.helm.image-name: image.repository
+    argocd-image-updater.argoproj.io/personal-website.helm.image-tag: image.tag
     argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/website.update-strategy: newest-build
-    argocd-image-updater.argoproj.io/website.force-update: "true"
+    argocd-image-updater.argoproj.io/personal-website.update-strategy: digest
+    argocd-image-updater.argoproj.io/pull-policy: Always
 
 spec:
   project: default
