@@ -2,7 +2,7 @@ fullname: personal-website
 replicaCount: 1
 image:
   repository: harbor.schwartzdaniel.de/private/personal-website
-  tag: "latest@sha:cc15c79aaf7a2997351c1ad8c348d9ca4369b71b"
+  tag: dev
   pullPolicy: Always
 
 imagePullSecrets:

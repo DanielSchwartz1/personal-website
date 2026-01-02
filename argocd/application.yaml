@@ -4,7 +4,7 @@ metadata:
   name: personal-website
   namespace: argocd
   annotations:
-    argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website:latest
+    argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website:dev
     argocd-image-updater.argoproj.io/personal-website.allow-tags: |
       regexp:.*
     argocd-image-updater.argoproj.io/personal-website.helm.image-name: image.repository
