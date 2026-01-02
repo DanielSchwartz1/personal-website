@@ -16,8 +16,8 @@ probes:
   liveness:
     path: /
     initialDelaySeconds: 5
-    periodSeconds: 10
+    periodSeconds: 60
   readiness:
     path: /
     initialDelaySeconds: 5
-    periodSeconds: 10
+    periodSeconds: 60

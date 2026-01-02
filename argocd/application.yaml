@@ -5,12 +5,12 @@ metadata:
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website:dev
-    argocd-image-updater.argoproj.io/personal-website.allow-tags: |
+    argocd-image-updater.argoproj.io/portfolio.allow-tags: |
       regexp:.*
-    argocd-image-updater.argoproj.io/personal-website.helm.image-name: image.repository
-    argocd-image-updater.argoproj.io/personal-website.helm.image-tag: image.tag
+    argocd-image-updater.argoproj.io/portfolio.helm.image-name: image.repository
+    argocd-image-updater.argoproj.io/portfolio.helm.image-tag: image.tag
     argocd-image-updater.argoproj.io/write-back-method: argocd
-    argocd-image-updater.argoproj.io/personal-website.update-strategy: digest
+    argocd-image-updater.argoproj.io/portfolio.update-strategy: digest
     argocd-image-updater.argoproj.io/pull-policy: Always
 
 spec:
