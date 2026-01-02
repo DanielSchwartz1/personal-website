@@ -5,7 +5,11 @@ metadata:
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: website=harbor.schwartzdaniel.de/private/personal-website
-    argocd-image-updater.argoproj.io/website.update-strategy: digest 
+    argocd-image-updater.argoproj.io/website.allow-tags: |
+      regexp:^[0-9a-f]{40}$
+    argocd-image-updater.argoproj.io/website.update-strategy: latest
+    argocd-image-updater.argoproj.io/website.force-update: "true"
+
 spec:
   project: default
   source:

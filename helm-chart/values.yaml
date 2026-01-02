@@ -3,7 +3,7 @@ replicaCount: 1
 image:
   repository: harbor.schwartzdaniel.de/private/personal-website
   tag: latest
-  pullPolicy: Always
+  pullPolicy: IfNotPresent
 
 imagePullSecrets:
   - name: harbor-pull-secret
