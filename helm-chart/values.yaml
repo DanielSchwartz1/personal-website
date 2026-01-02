@@ -2,8 +2,8 @@ fullname: personal-website
 replicaCount: 1
 image:
   repository: harbor.schwartzdaniel.de/private/personal-website
-  tag: latest
-  pullPolicy: IfNotPresent
+  tag: ""
+  pullPolicy: Always
 
 imagePullSecrets:
   - name: harbor-pull-secret
