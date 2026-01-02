@@ -6,6 +6,12 @@
 
 This repository contains both the source code for my personal website https://schwartzdaniel.com and the **GitOps-driven infrastructure** (Kubernetes/Helm) that powers the entire project.
 
+## Demo
+
+![Demo](demo-picture.png)
+
+---
+
 ## Tech Stack
 
 The stack is built with a focus on **automation and SRE best practices**:
