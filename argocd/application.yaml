@@ -11,6 +11,7 @@ metadata:
     argocd-image-updater.argoproj.io/website.helm.image-tag: image.tag
     argocd-image-updater.argoproj.io/write-back-method: argocd
     argocd-image-updater.argoproj.io/website.update-strategy: newest-build
+    argocd-image-updater.argoproj.io/website.force-update: "true"
 
 spec:
   project: default
