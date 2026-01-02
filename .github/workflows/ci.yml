@@ -25,4 +25,4 @@ jobs:
           context: .
           push: true
           tags: |
-            ${{ secrets.HARBOR_URL }}/private/personal-website:${{ github.sha }}
+            ${{ secrets.HARBOR_URL }}/private/personal-website:${{ github.sha }} ${{ secrets.HARBOR_URL }}/private/personal-website:latest
