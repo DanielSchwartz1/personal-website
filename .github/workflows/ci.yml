@@ -19,6 +19,18 @@ jobs:
           username: ${{ secrets.HARBOR_USER }}
           password: ${{ secrets.HARBOR_PASSWORD }}
 
+      - name: Clone Private Legal Docs
+        env:
+          TOKEN: ${{ secrets.LEGAL_DOCS_TOKEN }}
+        run: |
+          git clone https://x-access-token:${TOKEN}@github.com/DanielSchwartz1/personal-legal-docs.git temp_legal
+          
+          cp temp_legal/impressum.html ./app/
+          cp temp_legal/datenschutz.html ./app/
+          
+          # cleanup
+          rm -rf temp_legal
+
       - name: Build and Push
         uses: docker/build-push-action@v5
         with:
