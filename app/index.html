@@ -11,23 +11,31 @@
 <body>
 
     <nav class="navbar">
-        <div class="nav-container">
-        <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#certificates">Certificates</a>
-            <a href="#projects">Projects</a>
-            <a href="https://blog.schwartzdaniel.com" target="_blank">Blog </a>
+    <div class="nav-container">
+        <button class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <div class="nav-content" id="nav-content">
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#experience">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="#certificates">Certificates</a>
+                <a href="#projects">Projects</a>
+                <a href="https://blog.schwartzdaniel.com" target="_blank">Blog</a>
+            </div>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/danielschwartz1/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.xing.com/profile/Daniel_Schwartz10/" target="_blank"><i class="fab fa-xing"></i></a>
+                <a href="https://github.com/DanielSchwartz1" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:1daniel.schwartz1@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
-        <div class="nav-social">
-            <a href="https://www.linkedin.com/in/danielschwartz1/" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://www.xing.com/profile/Daniel_Schwartz10/" target="_blank"><i class="fab fa-xing"></i></a>
-            <a href="https://github.com/DanielSchwartz1" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="mailto:1daniel.schwartz1@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-        </div>
-        </div>
-    </nav>
+    </div>
+</nav>
 
     <section id="home" class="hero-section">
     <div id="particles-js"></div>
@@ -259,5 +267,6 @@
 
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="app.js"></script>
+    <script src="menu.js"></script>
 </body>
 </html>
