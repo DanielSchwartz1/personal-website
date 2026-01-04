@@ -27,6 +27,7 @@ jobs:
           
           cp temp_legal/impressum.html ./app/
           cp temp_legal/dataprivacy.html ./app/
+          cp temp_legal/robots.txt ./app/
           
           # cleanup
           rm -rf temp_legal
