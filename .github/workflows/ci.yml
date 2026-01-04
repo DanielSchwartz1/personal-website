@@ -26,7 +26,7 @@ jobs:
           git clone https://x-access-token:${TOKEN}@github.com/DanielSchwartz1/personal-legal-docs.git temp_legal
           
           cp temp_legal/impressum.html ./app/
-          cp temp_legal/datenschutz.html ./app/
+          cp temp_legal/dataprivacy.html ./app/
           
           # cleanup
           rm -rf temp_legal
