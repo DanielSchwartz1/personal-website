@@ -1,0 +1,11 @@
+# Traefik (k3s default ingress controller) ignores nginx.* annotations,
+# so the HTTP -> HTTPS redirect is done with a Traefik Middleware.
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: personal-website-redirect-https
+  namespace: portfolio-prod
+spec:
+  redirectScheme:
+    scheme: https
+    permanent: true
